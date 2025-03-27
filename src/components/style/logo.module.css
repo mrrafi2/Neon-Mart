@@ -1,0 +1,76 @@
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    animation: logoPulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes logoPulse {
+    0% {
+      filter: brightness(1);
+    }
+    50% {
+      filter: brightness(1.4);
+    }
+    100% {
+      filter: brightness(1);
+    }
+  }
+  
+  .logoImg {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #00d4ff; 
+    padding: 2px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .logoImg:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #00d4ff);
+  }
+  
+  .logoText {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 868px) {
+    .logoImg {
+      width: 50px;
+      height: 50px;
+    }
+    .logoText {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    .logoContainer {
+       position: relative;
+       top: -4px;
+       margin-left: 0rem;
+       left: -13px;
+    
+    }
+  
+    .logoImg {
+      width: 65px;
+      height: 65px;
+    }
+    .logoText {
+      font-size: 25px;
+    }
+  }

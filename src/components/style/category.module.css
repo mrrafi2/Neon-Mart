@@ -1,0 +1,99 @@
+.categoryContainer {
+    max-width: 600px;
+    margin-left: 20px;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid #00ffff;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    margin-bottom: 50px;
+
+  }
+  
+  .categoryItem {
+    margin-bottom: 15px;
+  }
+  
+  .categoryButton {
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #00ffff;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .categoryButton::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #00ffff, #ff00ff, #00ffff);
+    z-index: -1;
+    filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+
+  }
+  
+  .categoryButton:hover {
+    transform: scale(1.03);
+    border-color: #00ffff;
+  }
+  
+  .categoryButton:hover::before {
+    opacity: 1;
+  }
+  
+  .subcategoryList {
+    list-style: none;
+    margin: 10px 0 0 20px;
+    padding: 0;
+    border-left: 2px solid #00ffff;
+  }
+  
+  .subcategoryItem {
+    margin-bottom: 10px;
+  }
+  
+  .subcategoryButton {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .subcategoryButton:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.02);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
+    .categoryButton {
+      font-size: 18px;
+      padding: 14px 18px;
+    }
+    .subcategoryButton {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  

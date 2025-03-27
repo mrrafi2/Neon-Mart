@@ -1,0 +1,66 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    padding: 20px;
+  }
+  
+  .loginForm {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .eyeIcon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.3s ease;
+  }
+  
+  
+  
+  .loginButton {
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+  }
+  
+  .loginButton:hover {
+    background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+  }
+  
+  .googleButton {
+    background: #fff;
+    color: #db4437;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease-in-out, color 0.3s ease;
+  }
+  
+  .googleButton:hover {
+    background: #f1f1f1;
+  }
+  
+  @media (max-width: 576px) {
+    .loginForm {
+      padding: 20px;
+    }
+  }
+  

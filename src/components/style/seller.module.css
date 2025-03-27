@@ -1,0 +1,218 @@
+/* Main Dashboard Container */
+.dashboardContainer {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #1c1c28, #252536); /* Sleek gradient background */
+    border: none; /* Removed heavy borders for simplicity */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow for a modern feel */
+    color: #f5f5f5;
+}
+
+/* Dashboard Heading */
+.heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00ffff;
+    text-shadow: 0 3px 10px rgba(0, 255, 255, 0.8); /* Stylish neon glow */
+}
+
+/* Product List/Grid */
+.productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Modern responsive grid */
+    gap: 25px;
+}
+
+/* Individual Product Card */
+.productCard {
+    background: rgba(28, 28, 40, 0.9); /* Dark yet soft background */
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.2); /* Glow-like shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productCard:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 12px 30px rgba(0, 255, 255, 0.5); /* Enhanced glow */
+}
+
+/* Product Image Styling */
+.productImage {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Product Info Section */
+.productInfo {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.productTitle {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+    color: #00ffff; /* Highlighted product titles with cyan */
+}
+
+.productPrice {
+    font-size: 16px;
+    color: #ff5733; /* Vibrant pricing for emphasis */
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.productStock {
+    font-size: 14px;
+    color: #cccccc; /* Subtle text color */
+}
+
+.productDiscount {
+    font-size: 14px;
+    color: #00ff00; /* Green for discounts */
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.actionButton {
+    background: linear-gradient(135deg, #007bff, #0056b3); 
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle button shadow */
+}
+
+.actionButton:hover {
+    transform: scale(1.1); 
+    background: linear-gradient(135deg, #0056b3, #007bff); 
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5); 
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.stockInput {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    border-radius: 6px;
+    text-align: center;
+    background: rgba(28, 28, 40, 0.9); /* Matches card background */
+    color: #fff;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+    position: relative;
+    top: -9px;
+}
+
+.stockInput:focus {
+    border-color: #00ffff; /* Cyan border focus */
+    outline: none;
+}
+
+.discountSelect {
+    padding: 5px;
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    border-radius: 6px;
+    background: rgba(28, 28, 40, 0.9);
+    color: #fff;
+    transition: border-color 0.3s ease;
+    margin-bottom: 10px;
+    position: relative;
+    top: -9px;
+}
+
+.discountSelect:focus {
+    border-color: #00ffff;
+    outline: none;
+}
+
+/* Save Button */
+.saveButton {
+    background: #00ffcc;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Button shadow */
+}
+
+.saveButton:hover {
+    transform: scale(1.1); /* Slight enlargement */
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.5); /* Glow effect */
+}
+
+.deleteButton {
+    background: #ff1744;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin-top: 24px;
+    margin-left: 30px;
+    
+  }
+  
+  .deleteButton:hover {
+    transform: scale(1.05);
+    background: #d50000;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboardContainer {
+        padding: 15px;
+    }
+
+    .productImage {
+        height: 150px; /* Reduced height for smaller screens */
+    }
+
+    .actions {
+        flex-direction: column; /* Stacks actions vertically */
+        gap: 10px;
+    }
+
+    .actionButton {
+        padding: 6px 10px;
+    }
+
+    .stockInput,
+    .discountSelect {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productList {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid for small screens */
+        gap: 15px;
+    }
+}

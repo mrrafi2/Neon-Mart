@@ -1,0 +1,76 @@
+.signupContainer {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: #121212;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    text-align: center;
+    color: #fff;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 10px;
+    background: #222;
+    border: 1px solid #0ff;
+    border-radius: 5px;
+    color: white;
+    
+  }
+  
+  .passwordWrapper {
+    position: relative;
+  }
+  
+  .passwordWrapper span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .genderContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .agreeCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .signupButton {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #00f, #0ff);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .signupButton:hover {
+    background: linear-gradient(90deg, #0ff, #00f);
+    transform: scale(1.05);
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  

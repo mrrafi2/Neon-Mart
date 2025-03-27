@@ -1,0 +1,74 @@
+const locationData = {
+    "Dhaka": {
+        "Dhaka": ["Dhanmondi", "Gulshan", "Banani", "Uttara", "Mirpur", "Mohammadpur","Badda"],
+        "Gazipur": ["Tongi", "Gazipur Sadar", "Kaliakair", "Kapasia"],
+        "Narayanganj": ["Fatullah", "Rupganj", "Sonargaon", "Narayanganj Sadar"],
+        "Tangail": ["Tangail Sadar", "Madhupur", "Kalihati", "Sakhipur"],
+        "Kishoreganj": ["Kishoreganj Sadar", "Bhairab", "Hossainpur", "Pakundia"],
+        "Manikganj": ["Manikganj Sadar", "Singair", "Saturia"],
+        "Munshiganj": ["Munshiganj Sadar", "Sreenagar", "Lohajang"],
+        "Faridpur": ["Faridpur Sadar", "Bhanga", "Nagarkanda"],
+        "Madaripur": ["Madaripur Sadar", "Shibchar", "Rajoir"],
+        "Gopalganj": ["Gopalganj Sadar", "Tungipara", "Kotalipara"]
+      },
+      "Chittagong": {
+        "Chittagong": ["Patenga", "Bandar", "Pahartali", "Halishahar", "Agrabad", "Anowara", "Sitakunda", "Patiya"],
+        "Cox's Bazar": ["Teknaf", "Ramu", "Ukhia", "Chakaria"],
+        "Bandarban": ["Thanchi", "Ruma", "Rowangchhari", "Lama"],
+        "Khagrachari": ["Dighinala", "Matiranga", "Ramgarh", "Panchhari"],
+        "Rangamati": ["Kaptai", "Baghaichhari", "Barkal"],
+        "Noakhali": ["Noakhali Sadar", "Begumganj", "Hatiya"],
+        "Feni": ["Feni Sadar", "Daganbhuiyan", "Parshuram"],
+        "Cumilla": ["Cumilla Sadar", "Daudkandi", "Muradnagar"]
+      },
+      "Rajshahi": {
+        "Rajshahi": ["Rajshahi Sadar", "Paba", "Godagari", "Bagha"],
+        "Natore": ["Natore Sadar", "Baraigram", "Lalpur"],
+        "Pabna": ["Pabna Sadar", "Ishwardi", "Sujanagar"],
+        "Sirajganj": ["Sirajganj Sadar", "Kazipur", "Shahjadpur"],
+        "Naogaon": ["Naogaon Sadar", "Atrai", "Raninagar"],
+        "Joypurhat": ["Joypurhat Sadar", "Kalai", "Akkelpur"],
+        "Bogura": ["Bogura Sadar", "Sherpur", "Shibganj"],
+        "Chapainawabganj": ["Chapainawabganj Sadar", "Shibganj", "Nachole"]
+      },
+      "Khulna": {
+        "Khulna": ["Khulna Sadar", "Dumuria", "Batiaghata", "Paikgachha"],
+        "Jessore": ["Jessore Sadar", "Benapole", "Manirampur"],
+        "Satkhira": ["Satkhira Sadar", "Shyamnagar", "Kaliganj"],
+        "Bagerhat": ["Bagerhat Sadar", "Mongla", "Rampal"],
+        "Chuadanga": ["Chuadanga Sadar", "Alamdanga", "Damurhuda"],
+        "Kushtia": ["Kushtia Sadar", "Bheramara", "Khoksa"],
+        "Jhenaidah": ["Jhenaidah Sadar", "Kaliganj", "Maheshpur"],
+        "Narail": ["Narail Sadar", "Kalia", "Lohagara"]
+      },
+      "Barisal": {
+        "Barisal": ["Barisal Sadar", "Bakerganj", "Muladi", "Mehendiganj"],
+        "Bhola": ["Bhola Sadar", "Char Fasson", "Lalmohan"],
+        "Patuakhali": ["Patuakhali Sadar", "Kuakata", "Kalapara"],
+        "Jhalokati": ["Jhalokati Sadar", "Nalchity", "Kathalia"],
+        "Pirojpur": ["Pirojpur Sadar", "Mathbaria", "Bhandaria"],
+        "Barguna": ["Barguna Sadar", "Amtali", "Patharghata"]
+      },
+      "Sylhet": {
+        "Sylhet": ["Sylhet Sadar", "Beanibazar", "Golapganj", "Jaintiapur"],
+        "Moulvibazar": ["Moulvibazar Sadar", "Srimangal", "Kamalganj"],
+        "Habiganj": ["Habiganj Sadar", "Bahubal", "Chunarughat"],
+        "Sunamganj": ["Sunamganj Sadar", "Tahirpur", "Jamalganj", "Derai"]
+      },
+      "Rangpur": {
+        "Rangpur": ["Rangpur Sadar", "Badarganj", "Pirganj", "Gangachara"],
+        "Dinajpur": ["Dinajpur Sadar", "Birganj", "Parbatipur"],
+        "Gaibandha": ["Gaibandha Sadar", "Palashbari", "Gobindaganj"],
+        "Kurigram": ["Kurigram Sadar", "Nageshwari", "Bhurungamari"],
+        "Nilphamari": ["Nilphamari Sadar", "Saidpur", "Jaldhaka"],
+        "Thakurgaon": ["Thakurgaon Sadar", "Pirganj", "Ranisankail"],
+        "Lalmonirhat": ["Lalmonirhat Sadar", "Hatibandha", "Kaliganj"],
+        "Panchagarh": ["Panchagarh Sadar", "Tetulia", "Boda"]
+      },
+      "Mymensingh": {
+        "Mymensingh": ["Mymensingh Sadar", "Trishal", "Gafargaon", "Muktagachha"],
+        "Netrokona": ["Netrokona Sadar", "Kendua", "Mohanganj"],
+        "Sherpur": ["Sherpur Sadar", "Nalitabari", "Jhenaigati"],
+        "Jamalpur": ["Jamalpur Sadar", "Islampur", "Dewanganj", "Madarganj"]
+      }
+};

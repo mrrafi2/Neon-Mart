@@ -1,0 +1,210 @@
+/* Main container for the account icon */
+.accountContainer {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .accountIconWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Account icon styling */
+  .accountIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--avatar-bg, #00aaff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    top: -18px;
+    right: -8px ;
+  }
+  
+  .accountIcon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00ffff;
+  }
+  
+  .authLink {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;     
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.5rem;
+    margin-right: 5px;
+    transition: transform 0.2s;
+    font-size: 10px;
+    position: relative;
+    top: -20px;
+    right: -8px;
+    background: linear-gradient(120deg, #0b0d17, #1c1f35, #2a2e4b); 
+box-shadow: 
+    0 4px 15px rgba(11, 13, 23, 0.7),
+    0 0 25px #1c1f35,             
+    0 0 50px #2a2e4b,            
+    inset 0 0 20px rgba(20, 30, 50, 0.5); 
+  }
+  
+  .authLink:hover {
+    transform: scale(1.05);
+  }
+  
+  .fullOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1100;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .accountOverlay {
+    background: linear-gradient(100deg, #ffffff, #f0f0f0);
+    width: 230px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    color: #333;
+    animation: fadeIn 0.3s;
+  }
+  
+  /* Overlay close button */
+  .overlayCloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .overlayCloseButton:hover {
+    color: #f00;
+  }
+  
+  /* Account details */
+  .accountName {
+    margin: 20px 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .accountEmail,
+  .accountDetail {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Button group in account overlay */
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .futuristicButton {
+    padding: 5px 12px;
+    background: linear-gradient(45deg, #ff1100, #aa2a06);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    font-size: 12px;
+  }
+  
+  .futuristicButton:hover {
+    background: linear-gradient(45deg, #d55c3a, #ff0000);
+    transform: scale(1.05);
+  }
+
+  .cancelButton{
+
+    padding: 5px 12px;
+    background: linear-gradient(45deg, #00a2ff, #0624aa);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    font-size: 12px;
+  }
+
+  .cancelButton:hover{
+    background: linear-gradient(45deg, #3a51d5, #00b3ff);
+    transform: scale(1.05);
+  }
+  
+  .logoutDialog {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    width: 240px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: #fff;
+  }
+  
+  .logoutDialog p {
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .dialogButtons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+     
+  
+  /* Responsive Enhancements for Mobile */
+  @media (max-width: 600px) {
+    .accountOverlay,
+    .logoutDialog,
+    .editOverlay {
+      width: 90%;
+      padding: 20px;
+    }
+    .accountName {
+      font-size: 18px;
+    }
+    .accountEmail,
+    .accountDetail {
+      font-size: 12px;
+    }
+    .futuristicButton {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+    .overlayCloseButton {
+      font-size: 20px;
+    }
+    .avatarIcon {
+      width: 35px;
+      height: 35px;
+    }
+    .avatarIcon i {
+      font-size: 18px;
+    }
+  }
+  

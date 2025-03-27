@@ -1,0 +1,75 @@
+.productsContainer {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 0px;
+  }
+  
+  .tabContainer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  
+  .tabButton {
+    padding: 5px 10px;
+    border: 2px solid #00ffff;
+    border-radius: 4px;
+    background: transparent;
+    color: #00ffff;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 12px;
+  }
+  
+  .tabButton:hover {
+    background: #00ffff;
+    color: #000;
+  }
+  
+  .active {
+    background: #00ffff;
+    color: #000;
+  }
+  
+  .noResults {
+    text-align: center;
+    color: #ccc;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 30px;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    border: 2px solid #00ffff;
+    border-radius: 4px;
+    background: transparent;
+    color: #00ffff;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 12px;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:hover:not(:disabled) {
+    background: #00ffff;
+    color: #000;
+  }
+  
+  .activePage {
+    background: #00ffff;
+    color: #000;
+  }
+  

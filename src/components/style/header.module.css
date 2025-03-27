@@ -1,0 +1,83 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(135deg, #141e30, #243b55); 
+    color: #fff;
+    overflow: auto;
+    padding: 10px 20px;
+    border-bottom: 1px solid cyan;
+    animation: headerGlow 3s ease-in-out infinite;
+    overflow: hidden;
+
+}
+
+ 
+@keyframes headerGlow {
+    0% {
+      border-bottom-color: #00d4ff;
+      box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
+    }
+    25% {
+        border-bottom-color: #003cff;
+      box-shadow: 0 4px 12px rgba(0, 38, 255, 0.4);
+
+    }
+    
+    50% {
+      border-bottom-color: #9147ff;
+      box-shadow: 0 4px 12px rgba(145, 71, 255, 0.8);
+    }
+    100% {
+      border-bottom-color: #00d4ff;
+      box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
+    }
+  }
+
+.topRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.logoContainer {
+    flex: 1;
+}
+
+.topSection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeInTop 1s ease-in-out;
+}
+
+/* Search Container */
+.searchContainer {
+    position: relative;
+    top: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .topRow {
+        flex-direction: row; 
+    }
+
+    .topSection {
+        font-size: 12px;
+    }
+
+    .searchContainer {
+    position: relative;
+    top: -10px;
+    }
+}
